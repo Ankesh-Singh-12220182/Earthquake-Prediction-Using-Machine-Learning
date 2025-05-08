@@ -161,7 +161,7 @@ if st.button("🚀 Predict Earthquake Category"):
     predicted_class = class_labels[np.argmax(probabilities)]
     confidence = np.max(probabilities)
 
-    st.toast("Hooray! Earthquake prediction completed 🎉", icon='🎈')
+    
     st.info(f"🧠 **Predicted Category:** {predicted_class}\n🔐 **Confidence:** {confidence:.2f}")
 
     with st.expander("🔬 View All Class Probabilities"):
